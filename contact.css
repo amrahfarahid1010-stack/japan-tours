@@ -543,8 +543,9 @@ nav.navbar.navbar-scrolled {
 
 .footer-newsletter {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   gap: 0.6rem;
+  flex-direction: column;
 }
 
 .footer-newsletter .dark-input {
