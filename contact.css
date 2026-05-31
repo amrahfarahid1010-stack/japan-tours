@@ -1,0 +1,599 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0e0d0c;
+  color: #f0eae0;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  padding-top: 70px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Playfair Display", serif;
+}
+
+/* =============================================
+   NAVBAR
+   ============================================= */
+.navbar {
+  background-color: rgba(14, 13, 12, 0.95);
+  border-bottom: 1px solid #2e2b26;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  color: #f0eae0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-brand:hover {
+  color: #c49a3c;
+}
+
+.navbar-brand ion-icon {
+  font-size: 1.1rem;
+  color: #c49a3c;
+}
+
+.nav-link {
+  color: #8a8070 !important;
+  font-size: 0.9rem;
+  font-family: "Inter", sans-serif;
+}
+
+.nav-link:hover {
+  color: #c49a3c !important;
+}
+
+.nav-active {
+  color: #c49a3c !important;
+  border-bottom: 1px solid #c49a3c;
+}
+
+.btn-book {
+  border: 1px solid #c49a3c;
+  color: #c49a3c;
+  border-radius: 50px;
+  padding: 0.35rem 1.3rem;
+  font-size: 0.88rem;
+  background: transparent;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+}
+
+.btn-book:hover {
+  background-color: #c49a3c;
+  color: #0e0d0c;
+}
+
+nav.navbar.navbar-scrolled {
+  padding: 6px 0;
+  background: #000 !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+  transition:
+    padding 0.3s,
+    background 0.3s,
+    box-shadow 0.3s;
+}
+
+/* =============================================
+   CONTACT HERO
+   ============================================= */
+.contact-hero {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.contact-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.55) 100%
+  );
+  z-index: 1;
+}
+
+.contact-text {
+  position: relative;
+  z-index: 2;
+  padding: 60px 30px 50px;
+}
+
+.main-heroHeading {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.contact-hero-para {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.contact-hero-socials {
+  position: absolute;
+  right: 45px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 10;
+}
+
+.contact-hero-socials .social-link {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-hero-socials .social-link:hover {
+  color: #c49a3c;
+}
+
+/* =============================================
+   GET IN TOUCH
+   ============================================= */
+.get-in-touch {
+  background-color: #0e0d0c;
+  padding: 3.5rem 0;
+}
+
+.git-heading {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  font-weight: 700;
+  color: #c49a3c;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.git-sub {
+  font-size: 0.88rem;
+  color: #8a8070;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-bottom: 36px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.contact-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.contact-detail-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #c49a3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c49a3c;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.detail-label {
+  font-size: 0.78rem;
+  color: #8a8070;
+  margin: 0 0 3px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.detail-value {
+  font-size: 0.88rem;
+  color: #f0eae0;
+  margin: 0;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* Form card — unified radius with about page cards */
+.git-form-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #2e2b26;
+  border-radius: 12px;
+  padding: 36px 30px;
+}
+
+.git-form-title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.4rem;
+  color: #c49a3c;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.git-label {
+  font-size: 0.8rem;
+  color: #8a8070;
+  margin-bottom: 6px;
+  display: block;
+  letter-spacing: 0.5px;
+}
+
+/* Unified with .dark-input from about/book pages */
+.git-input {
+  background-color: #211f1c !important;
+  border: 1px solid #2e2b26 !important;
+  border-radius: 8px !important;
+  color: #f0eae0 !important;
+  font-size: 0.85rem;
+  padding: 10px 14px !important;
+  box-shadow: none !important;
+  transition: border-color 0.2s;
+}
+
+.git-input::placeholder {
+  color: #8a8070;
+}
+
+.git-input:focus {
+  border-color: #c49a3c !important;
+  box-shadow: 0 0 0 2px rgba(196, 154, 60, 0.2) !important;
+  outline: none !important;
+}
+
+/* Unified with .gold-btn from about/book pages */
+.btn-git-send {
+  background-color: #c49a3c;
+  color: #0e0d0c;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  padding: 12px 0;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition:
+    background-color 0.25s,
+    transform 0.15s;
+}
+
+.btn-git-send:hover {
+  background-color: #e8b84b;
+  color: #0e0d0c;
+  transform: translateY(-1px);
+}
+
+/* Form validation */
+.git-field-error {
+  display: none;
+  color: #e57373;
+  font-size: 0.72rem;
+  margin-top: 5px;
+  padding-left: 2px;
+}
+
+.git-input.git-input-error {
+  border-color: #e57373 !important;
+}
+
+.git-success-msg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  gap: 16px;
+}
+
+.git-success-icon {
+  font-size: 3rem;
+  color: #7ecfa0;
+  line-height: 1;
+}
+
+.git-success-msg p {
+  color: #8a8070;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =============================================
+   WE'D LOVE TO HEAR FROM YOU
+   ============================================= */
+.love-section {
+  background-color: #0e0d0c;
+  padding: 3.5rem 0;
+}
+
+.love-heading {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  font-weight: 700;
+  color: #c49a3c;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* Unified with .inc-card / .why-card from book page */
+.love-card {
+  border: 1px solid #2e2b26;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 28px 24px;
+  height: 100%;
+  transition:
+    border-color 0.25s,
+    transform 0.25s;
+}
+
+.love-card:hover {
+  border-color: #c49a3c;
+  transform: translateY(-4px);
+}
+
+.love-icon {
+  font-size: 1.6rem;
+  color: #c49a3c;
+  margin-bottom: 14px;
+}
+
+.love-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f0eae0;
+  margin-bottom: 8px;
+}
+
+.love-card-text {
+  font-size: 0.85rem;
+  color: #8a8070;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =============================================
+   FIND US — MAP
+   ============================================= */
+.find-us-section {
+  background-color: #0e0d0c;
+  padding: 3.5rem 0;
+}
+
+.find-us-heading {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  font-weight: 700;
+  color: #c49a3c;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+
+.map-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #2e2b26;
+}
+
+.map-frame {
+  display: block;
+  filter: grayscale(30%) invert(90%) hue-rotate(180deg);
+}
+
+/* =============================================
+   FOOTER 
+   ============================================= */
+.site-footer {
+  background-color: #0a0907;
+  border-top: 1px solid #2e2b26;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer-globe {
+  font-size: 1.3rem;
+  color: #c49a3c;
+}
+
+.footer-brand-name {
+  color: #f0eae0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+}
+
+.footer-tagline {
+  color: #8a8070;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.footer-col-title {
+  color: #f0eae0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+}
+
+.footer-link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-link-list a {
+  color: #8a8070;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.footer-link-list a:hover {
+  color: #c49a3c;
+}
+
+.footer-icon {
+  color: #8a8070;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.footer-icon:hover {
+  color: #c49a3c;
+}
+
+.footer-line {
+  border-color: #2e2b26 !important;
+}
+
+.footer-copy {
+  color: #8a8070;
+  font-size: 0.82rem;
+}
+
+.dark-input {
+  background-color: #211f1c !important;
+  border: 1px solid #2e2b26 !important;
+  color: #f0eae0 !important;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.dark-input:focus {
+  border-color: #c49a3c !important;
+  box-shadow: 0 0 0 2px rgba(196, 154, 60, 0.2) !important;
+  outline: none;
+}
+
+.dark-input::placeholder {
+  color: #8a8070;
+}
+
+.gold-btn {
+  background-color: #c49a3c;
+  color: #0e0d0c;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  transition:
+    background-color 0.25s,
+    transform 0.15s;
+}
+
+.gold-btn:hover {
+  background-color: #e8b84b;
+  color: #0e0d0c;
+  transform: translateY(-1px);
+}
+
+.footer-newsletter {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.footer-newsletter .dark-input {
+  flex: 1;
+  min-width: 0;
+}
+
+.footer-newsletter .gold-btn {
+  white-space: nowrap;
+  padding: 0.55rem 1rem;
+  flex-shrink: 0;
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 991px) {
+  .contact-hero-socials {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-heroHeading {
+    font-size: 2.4rem;
+  }
+
+  .git-heading,
+  .love-heading,
+  .find-us-heading {
+    font-size: 1.4rem;
+  }
+
+  .git-form-card {
+    padding: 24px 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-text {
+    padding: 40px 20px 36px;
+  }
+
+  .footer-newsletter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer-newsletter .gold-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japan Tours</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts: Playfair Display (headings) + Inter (body) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ionicons (for the plane icon in navbar) -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Your stylesheet -->
+    <link rel="stylesheet" href="styleHome.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid px-4">
+        <!-- Logo -->
+        <a class="navbar-brand" href="home.html">
+          <ion-icon name="airplane-outline"></ion-icon>
+          Japan Tours
+        </a>
+
+        <!-- Hamburger for mobile -->
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon" style="filter: invert(1)"></span>
+        </button>
+
+        <!-- Nav links + Book button -->
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav mx-auto gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="included.html">Included</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contacts</a>
+            </li>
+          </ul>
+          <a href="included.html#booking" class="btn btn-book mt-3 mt-lg-0"
+            >Book</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <!-- Background photo (mountain / Japan landscape) -->
+      <img
+        src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=1600&q=85"
+        alt="Japan mountains at sunset"
+        class="hero-bg-img"
+      />
+
+      <!-- Dark overlay -->
+      <div class="hero-overlay"></div>
+
+      <!-- Big JAPAN title -->
+      <div class="japan-text">JAPAN</div>
+
+      <!-- Info cards at the bottom -->
+      <div class="cards-wrapper">
+        <div class="row g-2 align-items-end">
+          <!-- Card 1: 3 cities -->
+          <div class="col">
+            <div class="card-item">
+              <img
+                src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=400&q=80"
+                alt="3 cities in Japan"
+                class="card-img"
+              />
+              <div class="card-text-overlay">
+                <h5>3 cities<br />in Japan</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: 10 days -->
+          <div class="col">
+            <div class="card-item">
+              <img
+                src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=400&q=80"
+                alt="10 days"
+                class="card-img"
+              />
+              <div class="card-text-overlay">
+                <h5>10 days</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: gigabytes of photos -->
+          <div class="col">
+            <div class="card-item">
+              <img
+                src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=400&q=80"
+                alt="gigabytes of photos"
+                class="card-img"
+              />
+              <div class="card-text-overlay">
+                <h5>gigabytes<br />of photos</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: eat ramen -->
+          <div class="col">
+            <div class="card-item">
+              <img
+                src="https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&q=80"
+                alt="eat ramen"
+                class="card-img"
+              />
+              <div class="card-text-overlay">
+                <h5>eat ramen</h5>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: enjoy the vibe -->
+          <div class="col">
+            <div class="card-item">
+              <img
+                src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=400&q=80"
+                alt="enjoy the vibe"
+                class="card-img"
+              />
+              <div class="card-text-overlay">
+                <h5>enjoy<br />the vibe</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-tour" id="about">
+      <div class="container-fluid px-4 px-lg-5">
+        <!-- "ABOUT THE TOUR" heading with lines -->
+        <div class="heading-wrapper">
+          <hr class="heading-line" />
+          <h2 class="heading">ABOUT THE TOUR</h2>
+          <hr class="heading-line" />
+        </div>
+
+        <!-- Main content row -->
+        <div class="row">
+          <!-- LEFT COLUMN: two paragraphs spread top + bottom -->
+          <div
+            class="col-12 col-md-5 d-flex flex-column justify-content-between about-text-col"
+          >
+            <p class="about-para">
+              We've planned a simple and convenient 10-day itinerary for your
+              trip to Japan. You'll visit three cities:
+              <span class="highlight">Osaka, Kyoto, and Tokyo.</span>
+            </p>
+
+            <p class="about-para">
+              No need to worry about routes, schedules, or finding places —
+              everything is already organized. We'll show you where to go, what
+              to see, and where to eat, so you can simply
+              <span class="highlight">enjoy the journey.</span>
+            </p>
+          </div>
+          <!-- end left column -->
+
+          <div class="col-12 col-md-7">
+            <div class="timeline">
+              <!-- Vertical line (the thin white stripe) -->
+              <div class="timeline-line"></div>
+
+              <!-- ── Stop 1: Osaka ── -->
+              <div class="timeline-item">
+                <div class="timeline-img-left">
+                  <img
+                    src="https://images.pexels.com/photos/34714490/pexels-photo-34714490.jpeg"
+                    alt="Osaka street"
+                  />
+                </div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-right">
+                  <img
+                    src="https://images.pexels.com/photos/34924697/pexels-photo-34924697.jpeg"
+                    alt="Osaka night"
+                  />
+                  <div class="timeline-meta">
+                    <p class="timeline-days">Days 1–3</p>
+                    <h3 class="timeline-city">Osaka</h3>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ── Stop 2: Kyoto ── -->
+              <div class="timeline-item">
+                <div class="timeline-img-left">
+                  <img
+                    src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=300&q=80"
+                    alt="Kyoto temple"
+                  />
+                </div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-right">
+                  <img
+                    src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=300&q=80"
+                    alt="Kyoto lanterns"
+                  />
+                  <div class="timeline-meta">
+                    <p class="timeline-days">Days 4–6</p>
+                    <h3 class="timeline-city">Kyoto</h3>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ── Stop 3: Tokyo ── -->
+              <div class="timeline-item">
+                <div class="timeline-img-left">
+                  <img
+                    src="https://images.pexels.com/photos/35134274/pexels-photo-35134274.jpeg"
+                    alt="Tokyo streets"
+                  />
+                </div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-right">
+                  <img
+                    src="https://images.pexels.com/photos/31258209/pexels-photo-31258209.jpeg"
+                    alt="Tokyo neon"
+                  />
+                  <div class="timeline-meta">
+                    <p class="timeline-days">Days 7–10</p>
+                    <h3 class="timeline-city">Tokyo</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="included-section" id="included">
+      <div class="container-fluid px-4 px-lg-5">
+        <!-- Heading with line on the right  -->
+        <div class="included-heading-wrapper">
+          <h2 class="included-heading">WHAT'S INCLUDED</h2>
+          <hr class="included-line" />
+        </div>
+
+        <!-- 4 feature cards -->
+        <div class="row g-3 mt-2">
+          <!-- Card: Guides -->
+          <div class="col-6 col-md-3">
+            <div class="included-card">
+              <div class="included-icon">
+                <ion-icon name="people-outline"></ion-icon>
+              </div>
+              <h5 class="included-card-title">Guides</h5>
+              <p class="included-card-text">
+                2 awesome guides who know everything about Japan!
+              </p>
+            </div>
+          </div>
+
+          <!-- Card: Flights -->
+          <div class="col-6 col-md-3">
+            <div class="included-card">
+              <div class="included-icon">
+                <ion-icon name="airplane-outline"></ion-icon>
+              </div>
+              <h5 class="included-card-title">Flights</h5>
+              <p class="included-card-text">
+                Routes:<br />
+                Moscow — Osaka<br />
+                Tokyo — Moscow
+              </p>
+            </div>
+          </div>
+
+          <!-- Card: Transfers -->
+          <div class="col-6 col-md-3">
+            <div class="included-card">
+              <div class="included-icon">
+                <ion-icon name="bus-outline"></ion-icon>
+              </div>
+              <h5 class="included-card-title">Transfers</h5>
+              <p class="included-card-text">
+                From the airport<br />to the hotels
+              </p>
+            </div>
+          </div>
+
+          <!-- Card: Hotels -->
+          <div class="col-6 col-md-3">
+            <div class="included-card">
+              <div class="included-icon">
+                <ion-icon name="bed-outline"></ion-icon>
+              </div>
+              <h5 class="included-card-title">Hotels</h5>
+              <p class="included-card-text">
+                Comfortable accommodation 2 people per room (breakfasts
+                included)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacts">
+      <!-- Background photo: Japanese pagoda / cherry blossoms -->
+      <img
+        src="https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=1400&q=85"
+        alt="Japan pagoda"
+        class="contact-bg-img"
+      />
+
+      <!-- Dark overlay -->
+      <div class="contact-overlay"></div>
+
+      <!-- Content wrapper -->
+      <div class="contact-content container-fluid px-4 px-lg-5">
+        <!-- Form card (glass) -->
+        <div class="contact-form-card">
+          <h3 class="form-title">
+            Want to join us,<br />but still have questions?
+          </h3>
+          <p class="form-sub">Leave a request</p>
+
+          <!-- Bootstrap form -->
+          <form>
+            <div class="mb-3">
+              <input
+                type="text"
+                class="form-control contact-input"
+                placeholder="Your name"
+              />
+            </div>
+            <div class="mb-3">
+              <input
+                type="tel"
+                class="form-control contact-input"
+                placeholder="Phone number"
+              />
+            </div>
+            <div class="mb-4">
+              <input
+                type="text"
+                class="form-control contact-input"
+                placeholder="Comment"
+              />
+            </div>
+            <button type="submit" class="btn btn-send w-100">Send</button>
+          </form>
+        </div>
+
+        <!-- Social icons — right side, vertically centred -->
+        <div class="social-icons">
+          <a href="#" class="social-link" aria-label="Instagram">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="#" class="social-link" aria-label="Facebook">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="#" class="social-link" aria-label="Telegram">
+            <ion-icon name="paper-plane-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ========== FOOTER ========== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Brand -->
+          <div class="col-lg-3">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-globe2 footer-globe"></i>
+              <span class="footer-brand-name">JAPAN TOURS</span>
+            </div>
+            <p class="footer-tagline">
+              Sharing Japan with the world, one journey at a time.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="col-6 col-md-3 col-lg-2">
+            <h6 class="footer-col-title">Quick Links</h6>
+            <ul class="footer-link-list">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Included</a></li>
+              <li><a href="#">Contacts</a></li>
+            </ul>
+          </div>
+
+          <!-- Support -->
+          <div class="col-6 col-md-3 col-lg-2">
+            <h6 class="footer-col-title">Support</h6>
+            <ul class="footer-link-list">
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Booking Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <!-- Follow Us -->
+          <div class="col-6 col-md-3 col-lg-2">
+            <h6 class="footer-col-title">Follow Us</h6>
+            <div class="d-flex gap-3 mt-2">
+              <a href="#" class="footer-icon"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+              <a href="#" class="footer-icon"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+              <a href="#" class="footer-icon"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-newsletter">
+            <input
+              type="email"
+              class="form-control dark-input"
+              placeholder="Enter your email"
+            />
+            <button class="btn gold-btn">Subscribe</button>
+          </div>
+        </div>
+
+        <hr class="footer-line mt-5 mb-3" />
+        <p class="text-center footer-copy">
+          &copy; 2025 Japan Tours. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS (needed for mobile hamburger menu) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--  JS -->
+
+    <script src="navbar.js"></script>
+
+    <script src="home.js"></script>
+  </body>
+</html>

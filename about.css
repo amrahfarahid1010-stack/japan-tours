@@ -1,0 +1,671 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0e0d0c;
+  color: #f0eae0;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  padding-top: 70px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Playfair Display", serif;
+}
+
+/* =============================================
+   NAVBAR
+   ============================================= */
+.navbar {
+  background-color: rgba(14, 13, 12, 0.95);
+  border-bottom: 1px solid #2e2b26;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  color: #f0eae0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-brand:hover {
+  color: #c49a3c;
+}
+
+.navbar-brand ion-icon {
+  font-size: 1.1rem;
+  color: #c49a3c;
+}
+
+.nav-link {
+  color: #8a8070 !important;
+  font-size: 0.9rem;
+  font-family: "Inter", sans-serif;
+}
+
+.nav-link:hover {
+  color: #c49a3c !important;
+}
+
+.btn-book {
+  border: 1px solid #c49a3c;
+  color: #c49a3c;
+  border-radius: 50px;
+  padding: 0.35rem 1.3rem;
+  font-size: 0.88rem;
+  background: transparent;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+}
+
+.btn-book:hover {
+  background-color: #c49a3c;
+  color: #0e0d0c;
+}
+.nav-active {
+  color: #c49a3c !important;
+  border-bottom: 1px solid #c49a3c;
+}
+
+/* Navbar scroll state */
+nav.navbar.navbar-scrolled {
+  padding: 6px 0;
+  background: #000 !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.7);
+  transition:
+    padding 0.3s,
+    background 0.3s,
+    box-shadow 0.3s;
+}
+
+/* =============================================
+   HERO — ABOUT US
+   ============================================= */
+.about-us {
+  position: relative;
+  height: 100vh;
+  min-height: 420px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 3rem;
+  overflow: hidden;
+}
+
+.about-us-hero {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(14, 13, 12, 0.45),
+    rgba(14, 13, 12, 0.88)
+  );
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  padding: 0 2rem;
+}
+
+.hero-main-heading {
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.hero-sub-para {
+  color: #8a8070;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =============================================
+   SHARED SECTION BASE
+   ============================================= */
+.our-story,
+.our-mission,
+.why-travel,
+.our-team {
+  background-color: #0e0d0c;
+  padding: 3.5rem 0;
+}
+
+.division-line {
+  border-color: #2e2b26;
+  margin: 0 1.5rem;
+  opacity: 1;
+}
+
+/* Gold section headings — unified with book page .gold-heading */
+.our-story-heading,
+.our-mission-subHeading,
+.why-travel-mainHeading,
+.our-team-heading {
+  color: #c49a3c;
+  font-family: "Playfair Display", serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  margin-bottom: 1.2rem;
+}
+
+/* =============================================
+   OUR STORY
+   ============================================= */
+.our-story .row {
+  align-items: center;
+  margin-bottom: 3.5rem;
+}
+
+.our-story-mainText {
+  padding-right: 2rem;
+}
+
+.our-story-subText {
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 1.8;
+  color: #8a8070;
+  margin-bottom: 1rem;
+}
+
+.our-story-subText:last-child {
+  margin-bottom: 0;
+}
+
+.our-story-subImage {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+/* =============================================
+   OUR MISSION
+   ============================================= */
+.our-mission {
+  padding-top: 0;
+}
+
+.our-mission-text {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.our-mission-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 1px solid #c49a3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c49a3c;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+}
+
+.our-mission-subHeading {
+  margin-bottom: 0.4rem;
+}
+
+.our-mission-subText {
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 1.8;
+  color: #8a8070;
+  margin: 0;
+}
+
+/* =============================================
+   WHY TRAVEL WITH US
+   ============================================= */
+.why-travel {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.why-travel-mainHeading {
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.cards-wrapper1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+/* Unified card style — matches book page .why-card / .inc-card */
+.card-item {
+  background-color: #1a1815;
+  border: 1px solid #2e2b26;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3.5rem 1rem 6.5rem;
+  gap: 0.6rem;
+  transition:
+    border-color 0.25s,
+    transform 0.25s;
+}
+
+.card-item:hover {
+  border-color: #c49a3c;
+  transform: translateY(-4px);
+}
+
+.card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid #c49a3c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c49a3c;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+}
+
+.card-heading {
+  color: #f0eae0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.card-text {
+  color: #8a8070;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  margin: 0;
+  white-space: normal;
+  word-break: normal;
+}
+
+/* =============================================
+   QUOTE BANNER
+   ============================================= */
+.quote-banner {
+  background-color: #0e0d0c;
+  padding: 0 1.5rem;
+}
+
+.section3 {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 480px;
+}
+
+.section3-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+}
+
+.section3 .overlay {
+  z-index: 2;
+}
+
+.section3-text {
+  z-index: 3;
+  position: absolute;
+  left: 2rem;
+  bottom: 9.3rem;
+  background-color: rgba(26, 24, 21, 0.88);
+  border: 1px solid #2e2b26;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  gap: 1rem;
+  max-width: 420px;
+}
+
+.section3-text p {
+  color: #f0eae0;
+  font-family: "Playfair Display", serif;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.coma {
+  color: #c49a3c;
+  font-size: 1.6rem;
+  transform: translateY(-8px);
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+/* =============================================
+   OUR TEAM
+   ============================================= */
+.our-team {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.our-team-para {
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 1.8;
+  color: #8a8070;
+  margin-bottom: 2rem;
+}
+
+.cards-wrapper2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.card-item1 {
+  background-color: #1a1815;
+  border: 1px solid #2e2b26;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  transition:
+    border-color 0.25s,
+    transform 0.25s;
+}
+
+.card-item1:hover {
+  border-color: #c49a3c;
+  transform: translateY(-4px);
+}
+
+.card-img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #c49a3c;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.card-haeding {
+  color: #f0eae0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.92rem;
+  margin-bottom: 0.25rem;
+}
+
+.card-para {
+  color: #8a8070;
+  font-size: 0.82rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* =============================================
+   FOOTER 
+   ============================================= */
+.site-footer {
+  background-color: #0a0907;
+  border-top: 1px solid #2e2b26;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.footer-globe {
+  font-size: 1.3rem;
+  color: #c49a3c;
+}
+
+.footer-brand-name {
+  color: #f0eae0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+}
+
+.footer-tagline {
+  color: #8a8070;
+  font-size: 0.82rem;
+  line-height: 1.6;
+}
+
+.footer-col-title {
+  color: #f0eae0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+}
+
+.footer-link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-link-list a {
+  color: #8a8070;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.footer-link-list a:hover {
+  color: #c49a3c;
+}
+
+.footer-icon {
+  color: #8a8070;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.footer-icon:hover {
+  color: #c49a3c;
+}
+
+.footer-line {
+  border-color: #2e2b26 !important;
+}
+
+.footer-copy {
+  color: #8a8070;
+  font-size: 0.82rem;
+}
+
+/* Newsletter input in footer */
+.dark-input {
+  background-color: #211f1c !important;
+  border: 1px solid #2e2b26 !important;
+  color: #f0eae0 !important;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.dark-input:focus {
+  border-color: #c49a3c !important;
+  box-shadow: 0 0 0 2px rgba(196, 154, 60, 0.2) !important;
+  outline: none;
+}
+
+.dark-input::placeholder {
+  color: #8a8070;
+}
+
+.gold-btn {
+  background-color: #c49a3c;
+  color: #0e0d0c;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  transition:
+    background-color 0.25s,
+    transform 0.15s;
+}
+
+.gold-btn:hover {
+  background-color: #e8b84b;
+  color: #0e0d0c;
+  transform: translateY(-1px);
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+@media (max-width: 991px) {
+  .cards-wrapper1,
+  .cards-wrapper2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .our-story-mainText {
+    padding-right: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .our-story-subImage {
+    height: 260px;
+  }
+
+  .section3 {
+    height: 420px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-main-heading {
+    font-size: 2.4rem;
+  }
+
+  .our-story-heading,
+  .our-mission-subHeading,
+  .why-travel-mainHeading,
+  .our-team-heading {
+    font-size: 1.4rem;
+  }
+
+  .section3 {
+    height: 360px;
+  }
+
+  .section3-text {
+    left: 1rem;
+    right: 1rem;
+    bottom: 5.5rem;
+    max-width: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .cards-wrapper1,
+  .cards-wrapper2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .our-mission-text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .section3 {
+    height: 300px;
+    border-radius: 10px;
+  }
+
+  .card-haeding {
+    white-space: normal;
+  }
+}
+/* =============================================
+   FOOTER NEWSLETTER RESPONSIVE
+   ============================================= */
+
+.footer-newsletter {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.footer-newsletter .dark-input {
+  flex: 1;
+  min-width: 0;
+}
+
+.footer-newsletter .gold-btn {
+  white-space: nowrap;
+  padding: 0.55rem 1rem;
+  flex-shrink: 0;
+}
+
+/* Mobile */
+@media (max-width: 575px) {
+  .footer-newsletter {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .footer-newsletter .gold-btn {
+    width: 100%;
+  }
+}

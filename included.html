@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Japan Tours – Included & Booking</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="included.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top top-nav">
+      <div class="container">
+        <a class="navbar-brand brand-logo" href="home.html">
+          <i class="bi bi-globe2"></i>
+          JAPAN TOURS
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text nav-active" href="included.html"
+                >Included</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-text" href="contact.html">Contacts</a>
+            </li>
+          </ul>
+
+          <a href="included.html#booking" class="btn btn-book mt-3 mt-lg-0"
+            >Book</a
+          >
+        </div>
+      </div>
+      <div class="social-side">
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+      </div>
+    </nav>
+
+    <section class="hero-box">
+      <div class="hero-dark-overlay"></div>
+      <div class="container hero-content">
+        <h1 class="hero-big-title">Included &amp;<br />Booking</h1>
+        <p class="hero-small-text">
+          Everything you need for a seamless journey through Japan.
+        </p>
+      </div>
+    </section>
+
+    <section class="dark-section">
+      <div class="container">
+        <h2 class="gold-heading">What's Included</h2>
+        <div class="row g-3 mt-2">
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="inc-card text-center p-3">
+              <i class="bi bi-building inc-icon"></i>
+              <h6 class="inc-title">Accommodations</h6>
+              <p class="inc-desc">
+                Handpicked hotels that blend comfort with local charm.
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="inc-card text-center p-3">
+              <i class="bi bi-car-front inc-icon"></i>
+              <h6 class="inc-title">Airport Transfers</h6>
+              <p class="inc-desc">Private transfers to and from the airport.</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="inc-card text-center p-3">
+              <i class="bi bi-camera inc-icon"></i>
+              <h6 class="inc-title">Guided Experiences</h6>
+              <p class="inc-desc">
+                Expert local guides and immersive cultural experiences.
+              </p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="inc-card text-center p-3">
+              <i class="bi bi-cup-hot inc-icon"></i>
+              <h6 class="inc-title">Meals</h6>
+              <p class="inc-desc">Daily breakfast and select local meals.</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="inc-card text-center p-3">
+              <i class="bi bi-ticket-perforated inc-icon"></i>
+              <h6 class="inc-title">Entry Tickets</h6>
+              <p class="inc-desc">All entrance fees to attractions included.</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <div class="inc-card text-center p-3">
+              <i class="bi bi-shield-check inc-icon"></i>
+              <h6 class="inc-title">Travel Support</h6>
+              <p class="inc-desc">24/7 support throughout your journey.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="dark-section border-top border-secondary">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6">
+            <div class="dark-card p-4">
+              <h2 class="gold-heading">Book Your Journey</h2>
+              <div class="mb-3">
+                <label class="field-label">Destination</label>
+                <select class="form-select dark-input" id="destination">
+                  <option>Japan Highlights Tour</option>
+                  <option>Tokyo City Break</option>
+                  <option>Kyoto Cultural Tour</option>
+                  <option>Mt. Fuji Adventure</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="field-label">Travel Dates</label>
+                <div class="d-flex gap-2">
+                  <input
+                    type="date"
+                    class="form-control dark-input"
+                    id="dateFrom"
+                    value="2025-05-20"
+                  />
+                  <span class="date-dash">—</span>
+                  <input
+                    type="date"
+                    class="form-control dark-input"
+                    id="dateTo"
+                    value="2025-05-30"
+                  />
+                </div>
+              </div>
+              <div class="mb-3">
+                <label class="field-label">Travelers</label>
+                <select class="form-select dark-input" id="travelers">
+                  <option>1 Adult</option>
+                  <option selected>2 Adults</option>
+                  <option>3 Adults</option>
+                  <option>4 Adults</option>
+                  <option>2 Adults + 1 Child</option>
+                  <option>2 Adults + 2 Children</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label class="field-label">Accommodation Preference</label>
+                <select class="form-select dark-input" id="accommodation">
+                  <option>Budget</option>
+                  <option selected>Comfort</option>
+                  <option>Premium</option>
+                  <option>Luxury</option>
+                </select>
+              </div>
+              <button
+                class="btn gold-btn w-100 py-3"
+                onclick="checkAvailability()"
+              >
+                Check Availability
+              </button>
+              <p class="secure-note mt-3 text-center">
+                <i class="bi bi-shield-lock"></i> Secure booking. Your data is
+                safe with us.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="dark-card p-4 h-100 d-flex flex-column">
+              <h2 class="white-heading">Your Trip Summary</h2>
+              <div class="summary-img-box">
+                <img
+                  src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=800&q=80"
+                  alt="Japan tour scenery"
+                  class="summary-img"
+                />
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center mt-3 mb-3 flex-wrap gap-2"
+              >
+                <h5 class="tour-name mb-0" id="summaryTitle">
+                  Japan Highlights Tour
+                </h5>
+                <span class="duration-badge" id="summaryDuration"
+                  >10 Days / 9 Nights</span
+                >
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Dates</span>
+                <span class="detail-value" id="summaryDates"
+                  >May 20, 2025 – May 30, 2025</span
+                >
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Travelers</span>
+                <span class="detail-value" id="summaryTravelers">2 Adults</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Accommodation</span>
+                <span class="detail-value" id="summaryAccom">Comfort</span>
+              </div>
+              <div class="detail-row price-row mt-2">
+                <span class="detail-label">Total Price</span>
+                <div class="text-end">
+                  <div class="big-price" id="summaryPrice">$3,280 USD</div>
+                  <small class="per-person-text">per person</small>
+                </div>
+              </div>
+              <button class="btn gold-btn w-100 py-3 mt-4">Book Now</button>
+              <p class="secure-note mt-3 text-center">
+                Free cancellation up to 30 days before departure.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section border-top border-secondary">
+      <div class="container">
+        <h2 class="gold-heading">Why Book With Us</h2>
+        <div class="row g-3 mt-2">
+          <div class="col-sm-6 col-lg-3">
+            <div class="why-card text-center p-4">
+              <i class="bi bi-patch-check why-icon"></i>
+              <h6 class="why-title">Trusted Local Experts</h6>
+              <p class="why-desc">On-the-ground knowledge you can rely on.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="why-card text-center p-4">
+              <i class="bi bi-tag why-icon"></i>
+              <h6 class="why-title">Best Value, No Hidden Fees</h6>
+              <p class="why-desc">
+                Transparent pricing with everything included.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="why-card text-center p-4">
+              <i class="bi bi-calendar-check why-icon"></i>
+              <h6 class="why-title">Flexible &amp; Easy Booking</h6>
+              <p class="why-desc">Customizable trips that fit your plans.</p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-3">
+            <div class="why-card text-center p-4">
+              <i class="bi bi-heart why-icon"></i>
+              <h6 class="why-title">Memories That Last</h6>
+              <p class="why-desc">
+                Curated experiences you'll treasure forever.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-wrap">
+      <div class="row g-0 h-100">
+        <div class="col-lg-5 testimonial-left p-5">
+          <i class="bi bi-quote quote-icon"></i>
+          <p class="quote-text" id="testimonialText">
+            Our trip to Japan was beyond amazing. Every detail was perfect, and
+            the experiences were unforgettable.
+          </p>
+          <div class="d-flex align-items-center gap-3 mt-4">
+            <img
+              src="https://i.pravatar.cc/48?img=47"
+              alt="Reviewer"
+              class="reviewer-pic"
+              id="testimonialAvatar"
+            />
+            <div>
+              <p class="reviewer-name mb-0" id="testimonialName">
+                Sarah &amp; James
+              </p>
+              <small class="reviewer-country" id="testimonialCountry"
+                >Australia</small
+              >
+            </div>
+          </div>
+          <div class="d-flex gap-2 mt-4">
+            <span class="slide-dot active-dot" data-i="0"></span>
+            <span class="slide-dot" data-i="1"></span>
+            <span class="slide-dot" data-i="2"></span>
+          </div>
+        </div>
+        <div class="col-lg-7 testimonial-right">
+          <img
+            src="https://images.unsplash.com/photo-1522383225653-ed111181a951?w=1000&q=80"
+            alt="Japan scenery"
+            class="testimonial-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="dark-section border-top border-secondary">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-6 col-md-3">
+            <i class="bi bi-lock trust-icon"></i>
+            <p class="trust-title">Secure Payments</p>
+            <p class="trust-desc">Your transactions are 100% secure.</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <i class="bi bi-x-circle trust-icon"></i>
+            <p class="trust-title">Flexible Cancellation</p>
+            <p class="trust-desc">Cancel or change with ease.</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <i class="bi bi-headset trust-icon"></i>
+            <p class="trust-title">24/7 Support</p>
+            <p class="trust-desc">We're here for you, anytime.</p>
+          </div>
+          <div class="col-6 col-md-3">
+            <i class="bi bi-tree trust-icon"></i>
+            <p class="trust-title">Sustainable Travel</p>
+            <p class="trust-desc">Travel responsibly, support local.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-3">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <i class="bi bi-globe2 footer-globe"></i>
+              <span class="footer-brand-name">JAPAN TOURS</span>
+            </div>
+            <p class="footer-tagline">
+              Sharing Japan with the world, one journey at a time.
+            </p>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <h6 class="footer-col-title">Quick Links</h6>
+            <ul class="footer-link-list">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="included.html">Included</a></li>
+              <li><a href="contact.html">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <h6 class="footer-col-title">Support</h6>
+            <ul class="footer-link-list">
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Booking Policy</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-2">
+            <h6 class="footer-col-title">Follow Us</h6>
+            <div class="d-flex gap-3 mt-2">
+              <a href="#" class="footer-icon"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+              <a href="#" class="footer-icon"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+              <a href="#" class="footer-icon"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3">
+            <h6 class="footer-col-title">Stay Inspired</h6>
+            <p class="footer-tagline mb-2">
+              Get travel tips and special offers.
+            </p>
+            <div class="footer-newsletter">
+              <input
+                type="email"
+                class="dark-input"
+                placeholder="Enter your email"
+              />
+              <button class="gold-btn">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <hr class="footer-line mt-5 mb-3" />
+        <p class="text-center footer-copy">
+          &copy; 2025 Japan Tours. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="navbar.js"></script>
+    <script src="included.js"></script>
+  </body>
+</html>
